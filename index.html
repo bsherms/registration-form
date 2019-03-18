@@ -18,8 +18,8 @@
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <form method="POST" action="https://formspree.io/briaksherman@gmail.com">
-        <h2>Personal details</h2>
         <fieldset>
+          <legend>Personal details</legend>
           <div class="grid">
             <div class="pad-r unit xs-1 s-1 m-1 l-1-2">
               <label for="name">Name</label>
@@ -42,13 +42,28 @@
                 <option>A little couch-potato-y</option>
               </select>
             </div>
-
-            <h2>Mission statement</h2>
-
-            <div class="">
+            <div class="unit xs-1 s-1 m-1 l-1">
               <label for="address">Address</label>
-              <input id="address" name="address">
+              <textarea id="address" name="address" required></textarea>
             </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mission statement</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1 l-1">
+              <label for="text">Why do you want to go to Mars?</label>
+              <textarea id="text" name="mission" required></textarea>
+            </div>
+            <div class="unit xs-1 s-1 m-1 l-1 text-center">
+              <button type="submit">Register for the trip!</button>
+            </div>
+            <div>
+              <input type="hidden" name="_subject" value="Request to join the mission">
+            </div>
+
+
           </div>
         </fieldset>
 
