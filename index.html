@@ -13,37 +13,44 @@
 <body>
 
   <section>
-    <div>
+    <div class="max-length">
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-      <h2>Personal details</h2>
 
-      <form class="max-length" method="POST" action="https://formspree.io/briaksherman@gmail.com">
-        <div class="">
-          <label for="name">Name</label>
-          <input id="name" name="name">
-        </div>
-        <div class="">
-          <label for="age">Age</label>
-          <input id="age" name="age">
-        </div>
-        <div class="">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" name="email" required>
-        </div>
-        <div class="push">
-          <label for="subject">Subject</label>
-          <select id="subject" name="_subject">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-          <div class="">
-            <label for="address">Address</label>
-            <input id="address" name="address">
+      <form method="POST" action="https://formspree.io/briaksherman@gmail.com">
+        <h2>Personal details</h2>
+        <fieldset>
+          <div class="grid">
+            <div class="pad-r unit xs-1 s-1 m-1 l-1-2">
+              <label for="name">Name</label>
+              <input id="name" name="name">
+            </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2 pad-l">
+              <label for="age">Age</label>
+              <input id="age" name="age">
+            </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2 pad-r">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="me@me.com" name="email" required>
+            </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2 push pad-l">
+              <label for="subject">Subject</label>
+              <select id="subject" name="_subject">
+                <option>Super-human</option>
+                <option>Fit as a fiddle</option>
+                <option>Not terribly strong</option>
+                <option>A little couch-potato-y</option>
+              </select>
+            </div>
+
+            <h2>Mission statement</h2>
+
+            <div class="">
+              <label for="address">Address</label>
+              <input id="address" name="address">
+            </div>
           </div>
-        </div>
+        </fieldset>
 
 
       </form>
